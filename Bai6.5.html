@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai6.5</title>
+</head>
+<body onload="yes()">
+<h1>DO YOU HATE ME?</h1>
+<br>
+<button id="yes" onclick="yes()" style="position: relative; left: 0; top: 0">YES</button>
+<button id="no" onclick="no()">NO</button>
+<script>
+
+    function no() {
+        alert("<3")
+    }
+    function yes() {
+        document.getElementById("yes").addEventListener("mouseover", function (){
+            document.getElementById("yes").style.left = Math.floor(Math.random()*1000).toString() + "px"
+            document.getElementById("yes").style.top = Math.floor(Math.random()*1000).toString() + "px"
+        })
+    }
+</script>
+</body>
+</html>
